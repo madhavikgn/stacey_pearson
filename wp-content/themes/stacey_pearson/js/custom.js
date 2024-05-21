@@ -107,6 +107,12 @@ jQuery( document ).ready(function() {
         ]
     });
 
+    jQuery('.sync-slider .slick-prev').hover(
+      function(){ jQuery(".next-prev").toggleClass('cursorprev') },
+    )
+    jQuery('.sync-slider .slick-next').hover(
+      function(){ jQuery(".next-prev").toggleClass('cursornext') },
+    )
 });
 
 

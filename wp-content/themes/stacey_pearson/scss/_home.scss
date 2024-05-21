@@ -961,6 +961,8 @@
                 }
                 &.slick-prev{
                     top: -60%;
+                    opacity: 0;
+                    z-index: 1;
                     @include x-xxl{
                         top: -70%;
                     }
@@ -1018,12 +1020,12 @@
                             transform: scaleY(1) rotate(-90deg);
                             transition-delay: 0s, 0.3s, 0.6s;
                         }
-                        
                     }
                 }
                 &.slick-next{
-                    z-index: 1;
                     background: url(../images/slick-next.svg) no-repeat center #000;
+                    opacity: 0;
+                    z-index: 1;
                     @include md{
                         top: 28%;
                         right: 20px;
@@ -1035,6 +1037,48 @@
                         &:hover{
                             background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
                             transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+        }
+        .next-prev{
+            position: absolute;
+            right: 96px;
+            bottom: 242px;
+            z-index: 0;
+            transition: all 0.6s;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            svg{
+                g{
+                    circle{
+                        stroke: #E1CCBF;
+                        transition: all 0.6s;
+                        stroke-dashoffset: 280;
+                        stroke-dasharray: 140;
+                    }
+                }
+                
+            }
+            &.cursorprev{
+                svg{
+                    g{
+                        #Ellipse_11{
+                            stroke-dashoffset: 0;
+                            stroke-dasharray: 140;
+                            stroke: #fff;
+                        }
+                    }
+                }
+            }
+            &.cursornext{
+                svg{
+                    g{
+                        #Ellipse_8{
+                            stroke-dashoffset: 0;
+                            stroke-dasharray: 140;
+                            stroke: #fff;
                         }
                     }
                 }
