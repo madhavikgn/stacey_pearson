@@ -1219,6 +1219,11 @@ footer hr {
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
   padding: 0 14px;
 }
+@media only screen and (max-width: 1600px) {
+  .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 1023px) {
   .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
     padding: 0 5px;
@@ -1227,6 +1232,21 @@ footer hr {
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
   height: 230px;
   object-fit: cover;
+}
+@media only screen and (max-width: 1600px) {
+  .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
+    height: 190px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
+    height: 150px;
+  }
 }
 @media (max-width: 767px) {
   .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
@@ -1262,7 +1282,7 @@ footer hr {
 }
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow {
-    top: -35%;
+    top: -52%;
   }
 }
 .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
@@ -1270,9 +1290,14 @@ footer hr {
   opacity: 0;
   z-index: 1;
 }
+@media only screen and (max-width: 1600px) {
+  .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
+    top: -55%;
+  }
+}
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
-    top: -70%;
+    top: -89%;
   }
 }
 @media (max-width: 1023px) {
@@ -1364,6 +1389,28 @@ footer hr {
   transition: all 0.6s;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+@media only screen and (max-width: 1600px) {
+  .gallery-view .mainpopup .next-prev {
+    right: 79px;
+    bottom: 190px;
+  }
+}
+@media (max-width: 1440px) {
+  .gallery-view .mainpopup .next-prev {
+    right: 72px;
+    bottom: 172px;
+  }
+}
+@media only screen and (max-width: 1367px) {
+  .gallery-view .mainpopup .next-prev {
+    right: 68px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .gallery-view .mainpopup .next-prev {
+    right: 64px;
+  }
 }
 @media (max-width: 1023px) {
   .gallery-view .mainpopup .next-prev {

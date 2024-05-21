@@ -945,12 +945,24 @@
                 width: 100%;
                 .innerslider{
                     padding: 0 14px;
+                    @media only screen and (max-width:1600px){
+                        padding: 0 10px;
+                    }
                     @include x-lg{
                         padding: 0 5px;
                     }
                     img{
                         height: 230px;
                         object-fit: cover;
+                        @media only screen and (max-width:1600px){
+                            height: 190px;
+                        }
+                        @media only screen and (max-width:1600px){
+                            height: 160px;
+                        }
+                        @media only screen and (max-width:1280px){
+                            height: 150px;
+                        }
                         @include md{
                             height: 100px;
                         }
@@ -982,14 +994,17 @@
                     top: -30%;
                 }
                 @include x-xxl{
-                    top: -35%;
+                    top: -52%;
                 }
                 &.slick-prev{
                     top: -60%;
                     opacity: 0;
                     z-index: 1;
+                    @media only screen and (max-width:1600px){
+                        top:-55%
+                    }
                     @include x-xxl{
-                        top: -70%;
+                        top: -89%;
                     }
                     @include x-lg{
                         top: 28%;
@@ -1052,7 +1067,6 @@
                     background: url(../images/slick-next.svg) no-repeat center #000;
                     opacity: 0;
                     z-index: 1;
-
                     @include x-lg{
                         top: 28%;
                         right: 20px;
@@ -1078,6 +1092,20 @@
             transition: all 0.6s;
             backface-visibility: hidden;
             -webkit-font-smoothing: subpixel-antialiased;
+            @media only screen and (max-width:1600px){
+                right: 79px;
+                bottom: 190px;
+            }
+            @include x-xxl{
+                right: 72px;
+                bottom: 172px;
+            }
+            @media only screen and (max-width:1367px){
+                right: 68px;
+            }
+            @media only screen and (max-width:1280px){
+                right: 64px;
+            }
             @include x-lg{
                 display: none;
             }
