@@ -1192,12 +1192,22 @@ footer hr {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
+@media (max-width: 767px) {
+  .gallery-view .mainpopup .popupslider .imagebox::after {
+    height: calc(100dvh - 300px);
+  }
+}
 .gallery-view .mainpopup .sync-slider {
   margin: 37px 0;
 }
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .sync-slider {
     margin: 20px 0;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-view .mainpopup .sync-slider {
+    margin: 0;
   }
 }
 .gallery-view .mainpopup .sync-slider .slick-track {
@@ -1217,6 +1227,11 @@ footer hr {
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
   height: 230px;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
+    height: 100px;
+  }
 }
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider.slick-current {
   position: relative;
@@ -1260,7 +1275,7 @@ footer hr {
     top: -70%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
     top: 28%;
     right: auto;
@@ -1270,6 +1285,7 @@ footer hr {
     z-index: 1;
     border: 1px solid #E1CCBF;
     background-size: 7px 4px;
+    opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev:hover {
     background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
@@ -1324,7 +1340,7 @@ footer hr {
   opacity: 0;
   z-index: 1;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-next {
     top: 28%;
     right: 20px;
@@ -1333,6 +1349,7 @@ footer hr {
     transform: rotate(-90deg);
     border: 1px solid #E1CCBF;
     background-size: 10px 6px;
+    opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-next:hover {
     background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
@@ -1347,6 +1364,11 @@ footer hr {
   transition: all 0.6s;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+@media (max-width: 1023px) {
+  .gallery-view .mainpopup .next-prev {
+    display: none;
+  }
 }
 .gallery-view .mainpopup .next-prev svg g circle {
   stroke: #E1CCBF;

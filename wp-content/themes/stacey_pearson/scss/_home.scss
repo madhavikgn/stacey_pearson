@@ -924,6 +924,9 @@
                     width: 100%;
                     background-color: rgba(0,0,0,.3);
                     z-index: 0;
+                    @include md{
+                        height:calc(100dvh - 300px);
+                    }
                 }
             }
         }
@@ -931,6 +934,9 @@
             margin: 37px 0;
             @include x-xxl{
                 margin: 20px 0;
+            }
+            @include md{
+                margin: 0;
             }
             .slick-track{
                 display: flex;
@@ -945,6 +951,9 @@
                     img{
                         height: 230px;
                         object-fit: cover;
+                        @include md{
+                            height: 100px;
+                        }
                     }
                     &.slick-current{
                         position: relative;
@@ -982,7 +991,7 @@
                     @include x-xxl{
                         top: -70%;
                     }
-                    @include md{
+                    @include x-lg{
                         top: 28%;
                         right: auto;
                         left: 20px;
@@ -991,6 +1000,7 @@
                         z-index: 1;
                         border: 1px solid $border-color;
                         background-size: 7px 4px;
+                        opacity: 1;
                         &:hover{
                             background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
                             transform: rotate(90deg);
@@ -1042,7 +1052,8 @@
                     background: url(../images/slick-next.svg) no-repeat center #000;
                     opacity: 0;
                     z-index: 1;
-                    @include md{
+
+                    @include x-lg{
                         top: 28%;
                         right: 20px;
                         left: auto;
@@ -1050,6 +1061,7 @@
                         transform: rotate(-90deg);
                         border: 1px solid $border-color;
                         background-size: 10px 6px;
+                        opacity: 1;
                         &:hover{
                             background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
                             transform: rotate(-90deg);
@@ -1066,6 +1078,9 @@
             transition: all 0.6s;
             backface-visibility: hidden;
             -webkit-font-smoothing: subpixel-antialiased;
+            @include x-lg{
+                display: none;
+            }
             svg{
                 g{
                     circle{
