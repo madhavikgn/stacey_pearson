@@ -1,0 +1,43 @@
+.announcement-bar{
+    background-color: $bg-color;
+    position: relative;
+    text-align: center;
+    color: $white-color;
+    font-weight: 500;
+    font-size: $small-size;
+    line-height: 30px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    .close{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -8px;
+        cursor: pointer;
+        svg{
+            display: block;
+        }
+    }
+}
+header{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    .logo{
+        width: 100%;
+        text-align: center;
+        padding: 44px 0;
+        a{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            display: block;
+            @include md{
+                width: 213px;
+                height: 100px;
+            }
+        }
+    }
+}

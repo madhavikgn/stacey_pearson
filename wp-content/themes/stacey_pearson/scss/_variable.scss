@@ -1,0 +1,88 @@
+$bg-color: #5B5055;
+$white-color: #ffffff;
+$text-color: #5B5055;
+$primary-bg-color: #363334;
+$border-color:#E1CCBF;
+$default-font: "Archivo", sans-serif;
+$raleway-font: "Raleway", sans-serif;
+$montserrat-font: "Montserrat", sans-serif;
+$default-size: 16px;
+$small-size: 14px;
+$h1-size: 32px;
+$h2-size: 20px;
+$container: 1322px;
+
+@mixin link{
+    font-family: $default-font;
+    font-size: $small-size;
+    line-height: 30px;
+    letter-spacing: 0.7px;
+    color: $white-color;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    &:hover{
+        color: $border-color;
+    }
+    &:before{
+        content: '';
+        background: $border-color;
+        display: block;
+        position: absolute;
+        top: -12px;
+        left: 0;
+        width: 106px;
+        height: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover:before{
+        width:100%;
+    }
+}
+@mixin white_button{
+    border: 1px solid $white-color;
+    text-transform: uppercase;
+    color: $white-color;
+    font-size: calc($default-size - 1px);
+    font-family: $default-font;
+    line-height: 30px;
+    letter-spacing: 2.25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $text-color;
+        background-color: $white-color;
+    }
+}
+@mixin grey_button{
+    border: 1px solid $text-color;
+    text-transform: uppercase;
+    color: $text-color;
+    font-size: calc($default-size - 1px);
+    font-family: $default-font;
+    line-height: 30px;
+    letter-spacing: 2.25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $white-color;
+    }
+}
+@mixin backBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border:1px solid $border-color;
+    position: relative;
+    transition: all 0.3s ease-in-out;    
+    background-image: url(../images/slick-prev.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $border-color;
+        background-image: url(../images/hover-icn.svg);
+    }
+}
