@@ -824,6 +824,7 @@
             .imagebox {
                 width: 100%;
                 height: calc(100vh - 290px);
+                position: relative;
                 @media only screen and (max-width:1600px){
                     height: calc(100vh - 250px);
                 }
@@ -853,6 +854,7 @@
                     bottom: 20px;
                     width: 100%;
                     max-width: 400px;
+                    z-index: 1;
                     @include md{
                         position: static;
                         padding: 20px 30px;
@@ -913,6 +915,16 @@
                         }
                     }
                 }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0,0,0,.3);
+                    z-index: 0;
+                }
             }
         }
         .sync-slider{
@@ -929,6 +941,10 @@
                     padding: 0 14px;
                     @include x-lg{
                         padding: 0 5px;
+                    }
+                    img{
+                        height: 230px;
+                        object-fit: cover;
                     }
                     &.slick-current{
                         position: relative;
