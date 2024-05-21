@@ -3,8 +3,8 @@
     get_header();
     $placeholder_image = get_field('placeholder_image', 'option');
 ?>
-
-<section class="home-main abcd">
+ 
+<section class="home-main">
     <!-- Banner Section -->
     <?php
         $images_with_details = get_field('images_with_details');
