@@ -1436,7 +1436,7 @@ footer hr {
 .gallery-view .mainpopup .next-prev svg g .another-circle, .gallery-view .mainpopup .next-prev svg g .another-circle-next {
   stroke-dasharray: 227;
   stroke-dashoffset: 227;
-  transition: stroke-dashoffset 2s linear;
+  transition: stroke-dashoffset 3s linear;
   stroke: #fff;
 }
 .gallery-view .mainpopup .next-prev.cursorprev svg g .another-circle {

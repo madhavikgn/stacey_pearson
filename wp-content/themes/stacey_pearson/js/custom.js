@@ -78,9 +78,12 @@ jQuery( document ).ready(function() {
       ]
       });
 
-      jQuery(".gallery-section ul li a").click(function(){        
-        jQuery(".sync-slider .slick-arrow").trigger("click");
-      });  
+      
+        jQuery(".gallery-section ul li a").click(function(){      
+          jQuery(".sync-slider .slick-arrow").trigger("click");
+        });  
+      
+      
 
       jQuery('.event-slider').slick({
         arrows: true,
