@@ -127,9 +127,7 @@ jQuery( document ).ready(function() {
 
     // Gallery popup Inquire button click to open contact form
     jQuery('.topbar .backlink').on('click', function(){
-      jQuery('#contact-modal').modal({
-          closeExisting: false
-      });
+      jQuery('#contact-modal').modal('show');
     });
 
     // Gallery popup Back arrow button to close popup
