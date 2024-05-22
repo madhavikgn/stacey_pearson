@@ -277,11 +277,12 @@
     jQuery(document).ready(function(){  
         // Thankyou Popup Script                 
         jQuery(document).on('wpcf7mailsent', function(){
-            // setTimeout(() => {         
-                jQuery('#contact-modal').modal({
-                    closeExisting: false
-                });
-            // }, 2500);
+            jQuery('#contact-modal').modal('hide');       
+            jQuery('#thankyou-modal').modal('show');                
+
+            // Refresh the form
+            var form = jQuery('form.wpcf7-form');
+            form[0].reset();
         });
 
         // Gallery popup Inquire button click to open contact form
