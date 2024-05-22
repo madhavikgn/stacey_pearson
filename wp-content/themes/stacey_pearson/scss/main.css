@@ -1218,6 +1218,7 @@ footer hr {
 }
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
   padding: 0 14px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
@@ -1417,21 +1418,19 @@ footer hr {
     display: none;
   }
 }
-.gallery-view .mainpopup .next-prev svg g circle {
-  stroke: #E1CCBF;
-  transition: all 0.6s;
-  stroke-dashoffset: 280;
-  stroke-dasharray: 140;
-}
-.gallery-view .mainpopup .next-prev.cursorprev svg g #Ellipse_11 {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 140;
+.gallery-view .mainpopup .next-prev svg g .another-circle, .gallery-view .mainpopup .next-prev svg g .another-circle-next {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  transition: stroke-dashoffset 2s linear;
   stroke: #fff;
 }
-.gallery-view .mainpopup .next-prev.cursornext svg g #Ellipse_8 {
+.gallery-view .mainpopup .next-prev.cursorprev svg g .another-circle {
   stroke-dashoffset: 0;
-  stroke-dasharray: 140;
-  stroke: #fff;
+  stroke: white;
+}
+.gallery-view .mainpopup .next-prev.cursornext svg g .another-circle-next {
+  stroke-dashoffset: 0;
+  stroke: white;
 }
 
 .error404 {
