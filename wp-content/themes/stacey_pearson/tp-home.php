@@ -271,30 +271,3 @@
 <?php
     get_footer();
 ?>
-
-
-<script>
-    jQuery(document).ready(function(){  
-        // Thankyou Popup Script                 
-        jQuery(document).on('wpcf7mailsent', function(){
-            jQuery('#contact-modal').modal('hide');       
-            jQuery('#thankyou-modal').modal('show');                
-
-            // Refresh the form
-            var form = jQuery('form.wpcf7-form');
-            form[0].reset();
-        });
-
-        // Gallery popup Inquire button click to open contact form
-        jQuery('.topbar .backlink').on('click', function(){
-            jQuery('#contact-modal').modal({
-                closeExisting: false
-            });
-        });
-
-        // Gallery popup Back arrow button to close popup
-        jQuery('.topbar .back-arrow').on('click', function(){
-            jQuery('.jquery-modal').hide();
-        });
-    });
-</script>
