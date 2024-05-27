@@ -34,7 +34,9 @@ h2{
     color: $white-color;
     font-weight: 700;
 }
-
+a:focus,a:visited{
+    color: $white-color;
+}
 .slick-slider{
     .slick-arrow{
         width: 60px;

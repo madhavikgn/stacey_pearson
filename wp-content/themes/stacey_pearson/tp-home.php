@@ -125,7 +125,7 @@
                             }
                         ?>
                     </div>
-                    <a href="" class="next-prev">
+                    <a href="javascript:;" class="next-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="165" viewBox="0 0 45 165">
                         <g id="Group_127" data-name="Group 127" transform="translate(-1327.5 -735.5)">
                             <path id="Path_167" data-name="Path 167" d="M0,0,4.25,4.25,8.5,0" transform="translate(1352.061 753.907) rotate(90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>

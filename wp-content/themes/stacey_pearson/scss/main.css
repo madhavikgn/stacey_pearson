@@ -1405,6 +1405,7 @@ footer hr {
   transition: all 0.6s;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+  pointer-events: none;
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .next-prev {
@@ -1535,6 +1536,10 @@ h2 {
   line-height: 22px;
   color: #ffffff;
   font-weight: 700;
+}
+
+a:focus, a:visited {
+  color: #ffffff;
 }
 
 .slick-slider .slick-arrow {
