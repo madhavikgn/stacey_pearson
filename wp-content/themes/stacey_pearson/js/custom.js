@@ -35,7 +35,7 @@ jQuery( document ).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
-            autoplay: false,
+            autoplay: true,
             cssEase: "ease-in-out",
             touchThreshold: 100,                       
           }); 
