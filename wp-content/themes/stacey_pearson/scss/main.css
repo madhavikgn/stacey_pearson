@@ -1507,6 +1507,9 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+html.popupopen {
+  overflow: hidden;
+}
 
 body {
   font-family: "Archivo", sans-serif;
