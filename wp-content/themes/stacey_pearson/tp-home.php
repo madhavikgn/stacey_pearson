@@ -55,7 +55,7 @@
                                             <img src="<?php echo $gallery_detail['image']; ?>" alt="<?php echo $gallery_detail['category_name']; ?>"/>
                                         </figure>
                                     </a>
-                                    <h2 class="gallery-name">
+                                    <h2 class="gallery-name" data-aos="fade-up" data-aos-duration="1000">
                                         <a href="#gallery-view-<?php echo $index; ?>" rel="modal:open" alt="<?php echo $gallery_detail['category_name']; ?>">
                                             <?php echo $gallery_detail['category_name']; ?>
                                         </a>
