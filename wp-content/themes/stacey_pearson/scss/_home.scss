@@ -1038,20 +1038,20 @@
                             transform: rotate(90deg);
                         }
                     }
-                    &::after{
-                        content: "";
-                        width: 1px;
-                        height: 280%;
-                        background-color: #E1CCBF;
-                        position: absolute;
-                        left: 50%;
-                        top: 100%;
-                        display: block;
-                        z-index: -1;
-                        @include md{
-                            display: none;
-                        }
-                    }
+                    // &::after{
+                    //     content: "";
+                    //     width: 1px;
+                    //     height: 280%;
+                    //     background-color: #E1CCBF;
+                    //     position: absolute;
+                    //     left: 50%;
+                    //     top: 100%;
+                    //     display: block;
+                    //     z-index: -1;
+                    //     @include md{
+                    //         display: none;
+                    //     }
+                    // }
                     &::before{
                         content: "";
                         position: absolute;
