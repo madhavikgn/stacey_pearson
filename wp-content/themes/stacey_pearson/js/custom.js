@@ -128,8 +128,10 @@ jQuery( document ).ready(function() {
     // Thankyou Popup                 
     jQuery(document).on('wpcf7mailsent', function(){
       jQuery('#contact-modal').modal('hide');
-      jQuery('#thankyou-modal').modal('show');                
-
+      jQuery('#thankyou-modal').modal('show');   
+      jQuery('#thankyou-modal').modal({
+        closeExisting: false
+      });             
       // Refresh the form
       var form = jQuery('form.wpcf7-form');
       form[0].reset();
