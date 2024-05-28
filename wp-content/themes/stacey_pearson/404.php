@@ -24,6 +24,28 @@ $not_found_pg_button_url = get_field('not_found_pg_button_url', 'option');
 			</div>
 		</div>
 	</div>
+
+	<!-- Contact Form Popup -->
+    <?php
+        $contact_form_title = get_field('contact_form_title', 'option');
+        $contact_form = get_field('contact_form', 'option');
+    ?>
+    <div id="contact-modal" class="modal contact-modal">
+        <div class="modalcontent">
+            <h1><?php echo $contact_form_title; ?></h1>
+            <?php echo do_shortcode($contact_form); ?>
+        </div>  
+    </div>
+
+    <!-- Thankyou Popup -->
+    <?php
+        $after_form_submit_text = get_field('after_form_submit_text', 'option');
+    ?>
+    <div id="thankyou-modal" class="modal contact-modal">
+        <div class="modalcontent">
+            <?php echo $after_form_submit_text; ?>
+        </div>  
+    </div>
 </section>
 
 <?php
