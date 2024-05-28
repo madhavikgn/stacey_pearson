@@ -683,6 +683,13 @@
                 width: 100%;
                 border-radius: 0;
                 color: #A4948F;
+                font-weight: 600;
+                letter-spacing: .5px;
+                @include md{
+                    font-size: 14px;
+                    line-height: 20px;                    
+                    letter-spacing: .4px;
+                }
             }
             textarea{
                 max-width: 100%;

@@ -914,6 +914,15 @@ footer hr {
   width: 100%;
   border-radius: 0;
   color: #A4948F;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 767px) {
+  .contact-modal .modalcontent .fulldiv input[type=text], .contact-modal .modalcontent .fulldiv input[type=email], .contact-modal .modalcontent .fulldiv textarea {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+  }
 }
 .contact-modal .modalcontent .fulldiv textarea {
   max-width: 100%;
