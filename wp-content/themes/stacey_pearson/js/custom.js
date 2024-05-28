@@ -89,6 +89,7 @@ jQuery( document ).ready(function() {
         }); 
         jQuery(".back-arrow").click(function(){      
           jQuery("html").removeClass("popupopen");
+          jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","none");
         });  
       
       
