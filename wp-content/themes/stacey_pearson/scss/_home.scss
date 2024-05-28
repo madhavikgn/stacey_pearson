@@ -839,7 +839,7 @@
         .popupslider{
             height: calc(100vh - 290px);
             @media only screen and (max-width:1600px){
-                height: calc(100vh - 250px);
+                height: calc(100vh - 220px);
             }
             @include x-xxl{
                 height: calc(100vh - 200px);
@@ -852,7 +852,7 @@
                 height: calc(100vh - 290px);
                 position: relative;
                 @media only screen and (max-width:1600px){
-                    height: calc(100vh - 250px);
+                    height: calc(100vh - 220px);
                 }
                 @include x-xxl{
                     height: calc(100vh - 200px);
@@ -865,7 +865,7 @@
                     object-fit: cover;
                     width: 100%;
                     @media only screen and (max-width:1600px){
-                        height: calc(100vh - 250px);
+                        height: calc(100vh - 220px);
                     }
                     @include x-xxl{
                         height: calc(100vh - 200px);
@@ -957,7 +957,7 @@
             }
         }
         .sync-slider{
-            margin: 37px 0;
+            margin: 30px 0 37px 0;
             z-index: 1;
             @include x-xxl{
                 margin: 20px 0;
@@ -1017,28 +1017,28 @@
                 position: absolute;
                 height: 44px;
                 width: 44px;
-                top: -35%;
+                top: -50%;
                 @media only screen and (max-width:1600px){
-                    top: -43%;
+                    top: -71%;
                 }
                 @include x-xxl{
-                    top: -52%;
+                    top: -65%;
                 }
                 @media only screen and (max-width:1280px){
-                    top:-56%;
+                    top:-70%;
                 }
                 &.slick-prev{
-                    top: -60%;
+                    top: -76%;
                     opacity: 0;
                     z-index: 1;
                     @media only screen and (max-width:1600px){
-                        top:-79%;
+                        top:-107%;
                     }
                     @include x-xxl{
-                        top: -89%;
+                        top: -101%;
                     }
                     @media only screen and (max-width:1280px){
-                        top:-95%;
+                        top:-109%;
                     }
                     @include x-lg{
                         top: 28%;
@@ -1121,7 +1121,7 @@
         .next-prev{
             position: absolute;
             right: 96px;
-            bottom: 242px;
+            bottom: 284px;
             z-index: 0;
             transition: all 0.6s;
             backface-visibility: hidden;
@@ -1129,11 +1129,11 @@
             pointer-events: none;
             @media only screen and (max-width:1600px){
                 right: 79px;
-                bottom: 190px;
+                bottom: 212px;
             }
             @include x-xxl{
                 right: 72px;
-                bottom: 172px;
+                bottom: 193px;
             }
             @media only screen and (max-width:1367px){
                 right: 68px;

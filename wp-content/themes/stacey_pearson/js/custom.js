@@ -91,8 +91,6 @@ jQuery( document ).ready(function() {
           jQuery("html").removeClass("popupopen");
           jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","none");
         });  
-      
-      
 
       jQuery('.event-slider').slick({
         arrows: true,

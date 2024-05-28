@@ -433,6 +433,11 @@ footer hr {
   height: 1px;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 767px) {
+  .gallery-section ul li .gallery-name a:before {
+    width: 84px;
+  }
+}
 .gallery-section ul li .gallery-name a:hover:before {
   width: 100%;
 }
@@ -1079,7 +1084,7 @@ footer hr {
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .popupslider {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 220px);
   }
 }
 @media (max-width: 1440px) {
@@ -1099,7 +1104,7 @@ footer hr {
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .popupslider .imagebox {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 220px);
   }
 }
 @media (max-width: 1440px) {
@@ -1119,7 +1124,7 @@ footer hr {
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .popupslider .imagebox img {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 220px);
   }
 }
 @media (max-width: 1440px) {
@@ -1225,7 +1230,7 @@ footer hr {
   }
 }
 .gallery-view .mainpopup .sync-slider {
-  margin: 37px 0;
+  margin: 30px 0 37px 0;
   z-index: 1;
 }
 @media (max-width: 1440px) {
@@ -1302,41 +1307,41 @@ footer hr {
   position: absolute;
   height: 44px;
   width: 44px;
-  top: -35%;
+  top: -50%;
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow {
-    top: -43%;
+    top: -71%;
   }
 }
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow {
-    top: -52%;
+    top: -65%;
   }
 }
 @media only screen and (max-width: 1280px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow {
-    top: -56%;
+    top: -70%;
   }
 }
 .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
-  top: -60%;
+  top: -76%;
   opacity: 0;
   z-index: 1;
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
-    top: -79%;
+    top: -107%;
   }
 }
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
-    top: -89%;
+    top: -101%;
   }
 }
 @media only screen and (max-width: 1280px) {
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev {
-    top: -95%;
+    top: -109%;
   }
 }
 @media (max-width: 1023px) {
@@ -1407,7 +1412,7 @@ footer hr {
 .gallery-view .mainpopup .next-prev {
   position: absolute;
   right: 96px;
-  bottom: 242px;
+  bottom: 284px;
   z-index: 0;
   transition: all 0.6s;
   backface-visibility: hidden;
@@ -1417,13 +1422,13 @@ footer hr {
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .next-prev {
     right: 79px;
-    bottom: 190px;
+    bottom: 212px;
   }
 }
 @media (max-width: 1440px) {
   .gallery-view .mainpopup .next-prev {
     right: 72px;
-    bottom: 172px;
+    bottom: 193px;
   }
 }
 @media only screen and (max-width: 1367px) {
