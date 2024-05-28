@@ -685,6 +685,9 @@
                 color: #A4948F;
                 font-weight: 600;
                 letter-spacing: .5px;
+                &::placeholder{
+                    color: #A4948F;
+                }
                 @include md{
                     font-size: 14px;
                     line-height: 20px;                    
