@@ -90,7 +90,7 @@
                         ?>
                                 <div class="imagebox">
                                     <img src="<?php echo $popup_images_detail['image']; ?>" loading="lazy" height="100%" width="100%" alt="big-img" title="big-img" /> 
-                                    <div class="contentbox">
+                                    <div class="contentbox" style="display:none;">
                                         <h2><?php echo $gallery_detail['category_name']; ?></h2>
                                         <div class="details">
                                             <div>

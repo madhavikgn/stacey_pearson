@@ -83,6 +83,9 @@ jQuery( document ).ready(function() {
         jQuery(".gallery-section ul li a").click(function(){      
           jQuery(".sync-slider .slick-arrow").trigger("click");
           jQuery("html").addClass("popupopen");
+          setTimeout(function(){
+            jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","block");
+          },1000)          
         }); 
         jQuery(".back-arrow").click(function(){      
           jQuery("html").removeClass("popupopen");
