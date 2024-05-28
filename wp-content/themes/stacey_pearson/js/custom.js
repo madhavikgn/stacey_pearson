@@ -92,7 +92,7 @@ jQuery( document ).ready(function() {
           jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","none");
         });  
 
-      jQuery('.event-slider').slick({
+        jQuery('.event-slider').slick({
         arrows: true,
         dots: false,
         infinite: false,
@@ -116,7 +116,15 @@ jQuery( document ).ready(function() {
               }                
           }
         ]
-    });
+        });
+      
+        jQuery('.btn-wrap .next-btn').on('click', function(){
+          jQuery(".event-slider .slick-next").trigger("click");
+          jQuery(".btn-wrap .prev-btn").css("opacity","1");
+        });
+        jQuery('.btn-wrap .prev-btn').on('click', function(){
+          jQuery(".event-slider .slick-prev").trigger("click");
+        });
 
     jQuery('.sync-slider .slick-prev').hover(
       function(){ jQuery(".next-prev").toggleClass('cursorprev') },

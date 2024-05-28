@@ -216,6 +216,26 @@
                             </div>   
                         <?php } ?>                     
                     </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:;" class="prev-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+                                <g id="Group_124" data-name="Group 124" transform="translate(-998.5 -2901.5)">
+                                    <path id="Path_168" data-name="Path 168" d="M-8393.963,3931.66l6.543,6.542,6.542-6.542" transform="translate(-2905.514 -5456.255) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
+                                    <circle id="Ellipse_12" data-name="Ellipse 12" cx="30" cy="30" r="30" transform="translate(999 2962) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
+                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="next-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+                                <g id="Group_124" data-name="Group 124" transform="translate(-998.5 -2901.5)">
+                                    <path id="Path_168" data-name="Path 168" d="M-8393.963,3931.66l6.543,6.542,6.542-6.542" transform="translate(-2905.514 -5456.255) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
+                                    <circle id="Ellipse_12" data-name="Ellipse 12" cx="30" cy="30" r="30" transform="translate(999 2962) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
+                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
     <?php
