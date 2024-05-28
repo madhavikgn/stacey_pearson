@@ -128,13 +128,11 @@ jQuery( document ).ready(function() {
     // Thankyou Popup                 
     jQuery(document).on('wpcf7mailsent', function(){
       jQuery('#contact-modal').modal('hide');
-      jQuery('#thankyou-modal').modal('show');   
-      jQuery('#thankyou-modal').modal({
-        closeExisting: false
-      });             
+      jQuery('#thankyou-modal').modal('show');          
       // Refresh the form
       var form = jQuery('form.wpcf7-form');
       form[0].reset();
+      jQuery("html").removeClass("popupopen");
     });
 
     // Gallery popup Inquire button click to open contact form
