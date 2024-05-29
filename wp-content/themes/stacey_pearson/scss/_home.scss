@@ -604,7 +604,7 @@
         .next-btn{
             position: absolute;
             right: 27.7%;
-            top: 39.5%;
+            top: 39.3%;
             left: auto;
             width: 80px;
             height: 80px;
@@ -615,6 +615,9 @@
             align-items: center;
             z-index: 0;
             outline: none;
+            @include x-xxl{
+                right: 24.7%;
+            }
             @include x-lg{
                 width: 60px;
                 height: 60px;
@@ -672,6 +675,9 @@
             z-index: 0;
             outline: none;
             opacity: 0;
+            @include x-xxl{
+                left: -38px;
+            }
             @include x-lg{
                 width: 60px;
                 height: 60px;

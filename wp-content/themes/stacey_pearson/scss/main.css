@@ -829,7 +829,7 @@ footer hr {
 .event-section .btn-wrap .next-btn {
   position: absolute;
   right: 27.7%;
-  top: 39.5%;
+  top: 39.3%;
   left: auto;
   width: 80px;
   height: 80px;
@@ -840,6 +840,11 @@ footer hr {
   align-items: center;
   z-index: 0;
   outline: none;
+}
+@media (max-width: 1440px) {
+  .event-section .btn-wrap .next-btn {
+    right: 24.7%;
+  }
 }
 @media (max-width: 1023px) {
   .event-section .btn-wrap .next-btn {
@@ -877,6 +882,11 @@ footer hr {
   z-index: 0;
   outline: none;
   opacity: 0;
+}
+@media (max-width: 1440px) {
+  .event-section .btn-wrap .prev-btn {
+    left: -38px;
+  }
 }
 @media (max-width: 1023px) {
   .event-section .btn-wrap .prev-btn {
