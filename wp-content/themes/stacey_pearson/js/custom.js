@@ -154,6 +154,12 @@ jQuery( document ).ready(function() {
     jQuery('.topbar .back-arrow').on('click', function(){
       jQuery('.jquery-modal').hide();
     });
+
+    jQuery('.footercontainer .commonbtn').on('click', function(){
+      jQuery('.wpcf7-form-control-wrap .wpcf7-not-valid-tip').css('display', 'none');
+      var form = jQuery('form.wpcf7-form');
+      form[0].reset();
+    });
 });
 
 
