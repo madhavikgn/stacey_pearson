@@ -160,6 +160,14 @@ jQuery( document ).ready(function() {
       var form = jQuery('form.wpcf7-form');
       form[0].reset();
     });
+
+    jQuery('.mainpopup .topbar .backlink').on('click', function(){
+      jQuery('.wpcf7-form-control-wrap .wpcf7-not-valid-tip').css('display', 'none');
+      var form = jQuery('form.wpcf7-form');
+      form[0].reset();
+    });
+
+    
 });
 
 
