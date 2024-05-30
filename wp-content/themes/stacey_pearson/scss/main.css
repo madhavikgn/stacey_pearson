@@ -206,7 +206,7 @@ footer hr {
   .banner-slider .item .item-content {
     right: auto;
     left: auto;
-    bottom: 110px;
+    bottom: 130px;
     position: relative;
     text-align: center;
   }
@@ -314,7 +314,7 @@ footer hr {
     height: 80px;
     border-radius: 100%;
     background: #363334;
-    bottom: 12px;
+    bottom: 48px;
   }
 }
 .banner-slider .go-down .circle-logo {
