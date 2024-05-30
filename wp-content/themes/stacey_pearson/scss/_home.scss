@@ -492,6 +492,7 @@
                 background-position: center;
                 left: -2.4%;
                 border: 0;   
+                top: 47%;
                 @include md{
                     left: auto;
                     right: 80px;
@@ -528,6 +529,7 @@
                 //border: 10px solid #363334;
                 background: $primary-bg-color;
                 border: 0;
+                top: 47%;
                 @include x-lg{
                     right: -20px;
                 }
