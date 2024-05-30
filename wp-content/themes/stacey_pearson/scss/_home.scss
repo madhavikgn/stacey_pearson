@@ -617,6 +617,9 @@
             align-items: center;
             z-index: 0;
             outline: none;
+            &.nextDisabled{
+                display: none;
+            }
             @include x-xxl{
                 right: 24.7%;
             }
@@ -676,7 +679,10 @@
             align-items: center;
             z-index: 0;
             outline: none;
-            opacity: 0;
+            //opacity: 0;
+            &.prevDisabled{
+                display: none;
+            }
             @include x-xxl{
                 left: -38px;
             }

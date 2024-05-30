@@ -92,35 +92,57 @@ jQuery( document ).ready(function() {
           jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","none");
         });  
 
-        jQuery('.event-slider').slick({
-        arrows: true,
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1.33,
-        slidesToScroll: 1,
-        autoplay: false,
-        centerMode: true,
-        centerPadding: '0',
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                  slidesToShow: 1.35,
-                }                
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 1,
-              }                
-          }
-        ]
+        function eventsliderInit() {
+          var $eventslider = jQuery(".event-slider");
+          $eventslider.each(function () {   
+          jQuery(this).slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1.33,
+            slidesToScroll: 1,
+            autoplay: false,
+            centerMode: true,
+            centerPadding: '0',
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                      slidesToShow: 1.35,
+                    }                
+                },
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 1,
+                  }                
+              }
+            ]
+          
+          });
+          jQuery(this).on('afterChange', function(event, slick, currentSlide, nextSlide) {
+            if(jQuery('button.slick-next').hasClass("slick-disabled")){
+              jQuery(".btn-wrap .next-btn").addClass("nextDisabled")
+            }else{
+              jQuery(".btn-wrap .next-btn").removeClass("nextDisabled")
+            }
+
+            if(jQuery('button.slick-prev').hasClass("slick-disabled")){
+              jQuery(".btn-wrap .prev-btn").addClass("prevDisabled")
+            }else{
+              jQuery(".btn-wrap .prev-btn").removeClass("prevDisabled")
+            }
+          });
         });
-      
+      }
+      eventsliderInit();
+      jQuery('.btn-wrap .prev-btn').addClass("prevDisabled");
+
+
         jQuery('.btn-wrap .next-btn').on('click', function(){
           jQuery(".event-slider .slick-next").trigger("click");
-          jQuery(".btn-wrap .prev-btn").css("opacity","1");
+          //jQuery(".btn-wrap .prev-btn").css("opacity","1");
         });
         jQuery('.btn-wrap .prev-btn').on('click', function(){
           jQuery(".event-slider .slick-prev").trigger("click");
