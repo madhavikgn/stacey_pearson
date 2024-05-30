@@ -80,7 +80,23 @@
             <div id="gallery-view-<?php echo $index; ?>" class="gallery-view modal">
                 <div class="mainpopup">
                     <div class="topbar">
-                        <a href="javascript:;" class="back-arrow"><img src="<?php echo get_template_directory_uri();?>/images/arrow-back.svg" loading="lazy" height="100%" width="100%" alt="arrow-back" title="arrow-back" />  Back to categories</a>
+                        <a href="javascript:;" class="back-arrow">
+                            <!-- <img src="<?php echo get_template_directory_uri();?>/images/arrow-back.svg" loading="lazy" height="100%" width="100%" alt="arrow-back" title="arrow-back" />   -->
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+                                <g id="Group_127" data-name="Group 127" transform="translate(-36 -27)">
+                                    <path id="Path_170" data-name="Path 170" d="M0,0,4.25,4.25,8.5,0" transform="translate(60.061 44.907) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+                                    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(80 27) rotate(90)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="22" cy="22" r="22" stroke="none"/>
+                                    <circle cx="22" cy="22" r="21.5" fill="none"/>
+                                    </g>
+                                </g>
+                            </svg> -->
+                            <span class="backicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="5.311" height="9.207" viewBox="0 0 5.311 9.207">
+                                    <path id="Path_170" data-name="Path 170" d="M0,0,4.25,4.25,8.5,0" transform="translate(4.958 0.354) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+                                </svg>
+                            </span>
+                            Back to categories</a>
                         <a href="javascript:;" class="backlink"><?php echo $contact_button_text_popup; ?></a>                        
                     </div>        
                     <div class="popupslider">

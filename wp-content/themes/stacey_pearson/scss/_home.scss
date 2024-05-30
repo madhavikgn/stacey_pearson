@@ -247,7 +247,7 @@
     position: relative;
     overflow: hidden;
     @include md{
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
     .content-outer{
         padding: 0 92px;
@@ -454,6 +454,7 @@
                             object-fit: cover;
                             @include md{
                                 height: 288px;
+                                object-position: top;
                             }
                         }
                     }
@@ -986,10 +987,31 @@
                 @include md{
                     font-size: 0;
                 }
-                img{
+                .backicon{
                     height: 44px;
                     width: 44px;
                     margin-right: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $white-color;
+                    border-radius: 50%;
+                    svg{
+                        width: 9px;
+                        height: 9px;
+                        margin: 0;
+                    }
+                }
+                &:hover{
+                    svg{
+                        path{
+                            stroke: $bg-color;
+                        }                        
+                    }
+                    span{
+                        background-color: $border-color;
+                        border-color: $border-color;
+                    }
                 }
             }
             .backlink{
@@ -1047,6 +1069,7 @@
                     @include md{
                         position: static;
                         padding: 20px 30px;
+                        max-width: 100%;
                         .backlink{
                             margin: 30px auto 0 auto;
                             display: flex;
