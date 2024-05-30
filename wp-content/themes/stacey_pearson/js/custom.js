@@ -38,7 +38,15 @@ jQuery( document ).ready(function() {
             autoplay:true,
             autoplaySpeed:3000,
             cssEase: "ease-in-out",
-            touchThreshold: 100,                       
+            touchThreshold: 100,  
+            responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  dots: false,
+                }                
+            },
+          ]                     
           }); 
           jQuery(this).on('afterChange', function(event, slick, currentSlide) {
             jQuery('.item-content').removeClass("aos-animate");

@@ -285,11 +285,11 @@
                 top: 171px;
                 transform: translateX(-50%);
                 @include md{
-                    top: 130px;
+                    top: 180px;
                     z-index: 1;
                     height: 0;
                     width: 1px;
-                    left: 70px;
+                    left: 30px;
                 }
             }   
             &[data-aos=fade-up].aos-animate:before {
@@ -307,6 +307,8 @@
                     width: 100%;
                     img{
                         width: 100%;
+                        height: 567px;
+                        object-fit: cover;
                     }
                 }
             }   
@@ -325,7 +327,13 @@
                     display: flex;
                     justify-content: center;
                 }
-                img{display: block;}
+                img{
+                    display: block;
+                    @include md{
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
             }
             h1{
                 margin: 0 0 23px 0;
@@ -337,6 +345,7 @@
                     line-height: 48px;
                     letter-spacing: 1px;
                     text-align: center;
+                    margin-bottom: 0;
                 }
             }
             p{
@@ -390,11 +399,20 @@
                         letter-spacing: 1.35px;
                         margin: 0;
                         line-height: normal;
+                        @include md{
+                            font-size: 25px;
+                            line-height: 48px;
+                        }
                     }
                     h2{
                         color: $white-color;
                         margin: 0;
                         line-height: normal;
+                        @include md{
+                            text-transform: uppercase;
+                            font-size: 15px;
+                            letter-spacing: .8px;
+                        }
                     }
                     hr{
                         height: 1px;
@@ -403,6 +421,9 @@
                         border: 0;
                         background-color: $border-color;
                         margin: 20px 0;
+                        @include md{
+                            display: block;
+                        }
                     }
                     p{
                         color: $white-color;  
@@ -446,6 +467,9 @@
                 max-width: 332px;
                 background-color: #E1CCBF;
                 margin: 40px 0 0 0;
+                @include md{
+                    display: none;
+                }
                 &::after{
                     content: "";
                     width: 100%;
@@ -457,9 +481,7 @@
                     left: 0;
                     bottom: 0;
                 }
-                @include md{
-                    display: none;
-                }
+                
             }
         }
     }
@@ -495,10 +517,16 @@
                 top: 47%;
                 @include md{
                     left: auto;
-                    right: 80px;
+                    right: 90px;
                     top: auto;
                     bottom: 20px;
                     background-color: transparent;
+                    &:hover{
+                        &::after{
+                            background: url(../images/slick-prev-hover.svg) no-repeat center #E1CCBF;
+                            background-size: 7px 13px;
+                        }                        
+                    }
                 }
                 @include md{
                     &::after{
@@ -513,11 +541,7 @@
                         height: 40px;
                         display: inline-block;
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        background-color: transparent;
-                        
+                        background-color: transparent;                        
                     }
                 }
             }
@@ -536,8 +560,15 @@
                 @include md{
                     background-color: transparent;
                     bottom: 20px;
-                    right: 20px;
+                    right: 30px;
                     top: auto;
+                    &:hover{
+                        &::after{
+                            background: url(../images/slick-next-hover.svg) no-repeat center #E1CCBF;
+                            background-size: 7px 13px;
+                        }
+                        
+                    }
                 }
                 @include md{
                     &::after{
@@ -552,9 +583,6 @@
                         height: 40px;
                         display: inline-block;
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
                         background-color: transparent;
                     }         
                 }
