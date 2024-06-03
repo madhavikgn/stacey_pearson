@@ -1009,8 +1009,8 @@
                         }                        
                     }
                     span{
-                        background-color: $border-color;
-                        border-color: $border-color;
+                        background-color: $white-color;
+                        border-color: $white-color;
                     }
                 }
             }
@@ -1181,7 +1181,7 @@
                             height: 100px;
                         }
                     }
-                    &.slick-current{
+                    &.slick-slide{
                         position: relative;
                         &::after{
                             content: "";
@@ -1192,6 +1192,11 @@
                             background-color: rgba(0,0,0,.8);
                             height: 100%;
                             width: 100%;
+                        }
+                    }
+                    &.slick-current{
+                        &::after{
+                            display: none;
                         }
                     }
                 }

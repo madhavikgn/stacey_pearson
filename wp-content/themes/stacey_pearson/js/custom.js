@@ -180,6 +180,12 @@ jQuery( document ).ready(function() {
       });
     });
 
+    jQuery('.footerbtn').on('click', function(){
+      jQuery('#contact-modal').modal({
+          closeExisting: false
+      });
+    });
+
     // Gallery popup Back arrow button to close popup
     jQuery('.topbar .back-arrow').on('click', function(){
       jQuery('.jquery-modal').hide();

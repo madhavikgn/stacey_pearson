@@ -139,8 +139,6 @@
                                 </div>
                         <?php
                             }
-
-                           
                         ?>
                     </div>
                     <a href="javascript:;" class="next-prev">
@@ -158,7 +156,6 @@
                     </svg>
                     </a>
                 </div>
-                <?php  include 'footer-popup.php';?>
             </div>
     <?php } ?>
   
