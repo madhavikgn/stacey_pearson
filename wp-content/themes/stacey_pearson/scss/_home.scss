@@ -135,20 +135,21 @@
         }
     }
     .go-down{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background: $primary-bg-color;
+        bottom: -42px;     
         @include md{
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 80px;
-            border-radius: 100%;
-            background: $primary-bg-color;
             bottom: 48px;
-        }        
+        }
         .circle-logo{
             position: absolute;
             left: 50%;
-            bottom: -30px;
+            bottom: 10px;
             transform: translateX(-50%);
             width: 60px;
             height: 60px;

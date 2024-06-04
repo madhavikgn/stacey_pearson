@@ -305,22 +305,25 @@ footer hr {
   border-radius: 10px;
   margin-left: -0.5px;
 }
+.banner-slider .go-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #363334;
+  bottom: -42px;
+}
 @media (max-width: 767px) {
   .banner-slider .go-down {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background: #363334;
     bottom: 48px;
   }
 }
 .banner-slider .go-down .circle-logo {
   position: absolute;
   left: 50%;
-  bottom: -30px;
+  bottom: 10px;
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
