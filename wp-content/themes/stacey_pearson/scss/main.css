@@ -309,8 +309,8 @@ footer hr {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 100%;
   background: #363334;
   bottom: -42px;
@@ -318,12 +318,14 @@ footer hr {
 @media (max-width: 767px) {
   .banner-slider .go-down {
     bottom: 48px;
+    width: 80px;
+    height: 80px;
   }
 }
 .banner-slider .go-down .circle-logo {
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 15px;
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
