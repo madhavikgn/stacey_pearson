@@ -11,6 +11,9 @@
     left: 0;
     top: 0;
     z-index: -1;
+    @include md{
+        display: none;
+    }
     }
 }
 .banner-slider{    
@@ -38,7 +41,7 @@
             @include md{
                 right: auto;
                 left: auto;
-                bottom: 130px;
+                bottom: 145px;
                 position: relative;
                 text-align: center;
             }
@@ -172,12 +175,28 @@
 }
 .gallery-section{
     padding: 261px 0 115px 0;
+    @include md{
+        position: relative;
+        &::after{
+            background-image: url(../images/bg-image.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;    
+            background-size: cover;
+            content: "";
+            width: 100%;
+            height: 110%;    
+            position: absolute;
+            left: 0;
+            top: -62px;
+            z-index: -1;
+        }        
+    }
     @include x-lg{
         padding-top: 140px;
         padding-bottom: 0;
     }
     @include md{
-        padding: 0;
+        padding: 0 0 115px 0;
     }
     ul{
         margin: 0;
@@ -251,6 +270,7 @@
     overflow: hidden;
     @include md{
         padding-bottom: 80px;
+        padding-top: 0;
     }
     .content-outer{
         padding: 0 92px;
