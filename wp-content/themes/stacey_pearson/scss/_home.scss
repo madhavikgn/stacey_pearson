@@ -144,8 +144,30 @@
         width: 90px;
         height: 90px;
         border-radius: 100%;
-        background: $primary-bg-color;
-        bottom: -42px;     
+        //background: $primary-bg-color;
+        bottom: -42px;             
+        &::after{
+            content: "";
+            background: #1E1C1D url("../images/bg-image.png") no-repeat;
+            background-size: 300% 300%;
+            z-index: -1;
+            position: absolute;
+            top: 26%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 48px;
+            width: 90px;
+            border-radius: 67.5px 67.5px 0 0;
+            @include lg{
+                top: 27%;
+            }
+            @include md{
+                top: 21%;
+                height: 38px;
+                width: 80px;
+                border-radius: 60px 60px 0 0;
+            }
+        }
         @include md{
             bottom: 48px;
             width: 80px;
@@ -187,7 +209,7 @@
             height: 110%;    
             position: absolute;
             left: 0;
-            top: -62px;
+            top: -95px;
             z-index: -1;
         }        
     }
