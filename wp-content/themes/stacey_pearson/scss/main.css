@@ -321,8 +321,8 @@ footer hr {
 }
 .banner-slider .go-down::after {
   content: "";
-  background: #1E1C1D url("../images/bg-image.png") no-repeat;
-  background-size: 300% 300%;
+  background: #363334 url("../images/bg-image.png") no-repeat;
+  background-size: 700% 700%;
   z-index: -1;
   position: absolute;
   top: 26%;
