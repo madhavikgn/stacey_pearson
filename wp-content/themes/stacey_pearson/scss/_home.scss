@@ -158,6 +158,9 @@
             height: 48px;
             width: 90px;
             border-radius: 67.5px 67.5px 0 0;
+            @media only screen and (max-width:1800px){
+                top: 27%;
+            }
             @include lg{
                 top: 27%;
             }

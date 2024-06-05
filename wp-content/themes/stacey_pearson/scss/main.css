@@ -332,6 +332,11 @@ footer hr {
   width: 90px;
   border-radius: 67.5px 67.5px 0 0;
 }
+@media only screen and (max-width: 1800px) {
+  .banner-slider .go-down::after {
+    top: 27%;
+  }
+}
 @media (max-width: 960px) {
   .banner-slider .go-down::after {
     top: 27%;
