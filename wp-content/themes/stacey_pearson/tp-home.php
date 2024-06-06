@@ -148,11 +148,11 @@
                         <g id="Group_127" data-name="Group 127" transform="translate(-1327.5 -735.5)">
                             <path id="Path_167" data-name="Path 167" d="M0,0,4.25,4.25,8.5,0" transform="translate(1352.061 753.907) rotate(90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                             <circle id="Ellipse_11" data-name="Ellipse 11" cx="22" cy="22" r="22" transform="translate(1372 736) rotate(90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
-                            <circle transform="translate(1372 736) rotate(180)" class="another-circle" cx="22" cy="-22" r="22" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                            <circle transform="translate(1372 736) rotate(180)" class="another-circle" cx="22" cy="-22" r="22" fill="transparent" stroke="#e1ccbf" stroke-width="1.5" />
                             <line id="Line_137" data-name="Line 137" y2="63" transform="translate(1350.339 837.5)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                             <line id="Line_138" data-name="Line 138" y2="14" transform="translate(1350.339 780.5)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                             <circle id="Ellipse_8" data-name="Ellipse 8" cx="22" cy="22" r="22" transform="translate(1328 838) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
-                            <circle transform="translate(1372 736) rotate(0)" class="another-circle-next" cx="-22" cy="80" r="22" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                            <circle transform="translate(1372 736) rotate(0)" class="another-circle-next" cx="-22" cy="80" r="22" fill="transparent" stroke="#e1ccbf" stroke-width="1.5" />
                             <path id="Path_166" data-name="Path 166" d="M0,0,4.25,4.25,8.5,0" transform="translate(1348.214 820.369) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                         </g>
                     </svg>
@@ -241,7 +241,7 @@
                                 <g id="Group_124" data-name="Group 124" transform="translate(-998.5 -2901.5)">
                                     <path id="Path_168" data-name="Path 168" d="M-8393.963,3931.66l6.543,6.542,6.542-6.542" transform="translate(-2905.514 -5456.255) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                                     <circle id="Ellipse_12" data-name="Ellipse 12" cx="30" cy="30" r="30" transform="translate(999 2962) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
-                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1.5" />
                                 </g>
                             </svg>
                         </a>
@@ -250,7 +250,7 @@
                                 <g id="Group_124" data-name="Group 124" transform="translate(-998.5 -2901.5)">
                                     <path id="Path_168" data-name="Path 168" d="M-8393.963,3931.66l6.543,6.542,6.542-6.542" transform="translate(-2905.514 -5456.255) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
                                     <circle id="Ellipse_12" data-name="Ellipse 12" cx="30" cy="30" r="30" transform="translate(999 2962) rotate(-90)" fill="none" stroke="#e1ccbf" stroke-width="1"/>
-                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1" />
+                                    <circle transform="translate(999 2962) rotate(0)" class="another-circle" cx="30" cy="-30" r="30" fill="transparent" stroke="#e1ccbf" stroke-width="1.5" />
                                 </g>
                             </svg>
                         </a>

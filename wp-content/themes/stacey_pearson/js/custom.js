@@ -1,5 +1,15 @@
 jQuery( document ).ready(function() {
 
+  jQuery(window).scroll(function() {    
+    var scroll = jQuery(window).scrollTop();
+    if (scroll >= 700) {
+      jQuery(".home-main").addClass("scrolled"); 
+    }else{
+      jQuery(".home-main").removeClass("scrolled"); 
+    }
+    
+  }); 
+
   setTimeout(() => {
     AOS.init({
         offset: 200,

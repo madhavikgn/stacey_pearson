@@ -164,7 +164,7 @@ footer hr {
 }
 .home-main:after {
   background-image: url(../images/bg-image.png);
-  background-position: bottom center;
+  background-position: bottom right;
   background-repeat: no-repeat;
   content: "";
   width: 100%;
@@ -178,6 +178,9 @@ footer hr {
   .home-main:after {
     display: none;
   }
+}
+.home-main.scrolled::after {
+  background-position: bottom center;
 }
 
 .banner-slider {
