@@ -149,7 +149,7 @@
         &::after{
             content: "";
             background: #363334 url("../images/bg-image.png") no-repeat;
-            background-size: 700% 700%;
+            background-size: 1500% 1500%;
             z-index: -1;
             position: absolute;
             top: 26%;
@@ -158,12 +158,10 @@
             height: 48px;
             width: 90px;
             border-radius: 67.5px 67.5px 0 0;
+            background-position: 100px 100px;
             @media only screen and (max-width:1800px){
                 top: 27%;
-            }
-            @include lg{
-                top: 27%;
-            }
+            } 
             @include md{
                 top: 21%;
                 height: 38px;

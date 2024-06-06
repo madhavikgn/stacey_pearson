@@ -322,7 +322,7 @@ footer hr {
 .banner-slider .go-down::after {
   content: "";
   background: #363334 url("../images/bg-image.png") no-repeat;
-  background-size: 700% 700%;
+  background-size: 1500% 1500%;
   z-index: -1;
   position: absolute;
   top: 26%;
@@ -331,13 +331,9 @@ footer hr {
   height: 48px;
   width: 90px;
   border-radius: 67.5px 67.5px 0 0;
+  background-position: 100px 100px;
 }
 @media only screen and (max-width: 1800px) {
-  .banner-slider .go-down::after {
-    top: 27%;
-  }
-}
-@media (max-width: 960px) {
   .banner-slider .go-down::after {
     top: 27%;
   }
