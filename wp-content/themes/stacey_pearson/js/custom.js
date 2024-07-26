@@ -113,6 +113,7 @@ jQuery( document ).ready(function() {
         function eventsliderInit() {
           var $eventslider = jQuery(".event-slider");
           $eventslider.each(function () {   
+            
           jQuery(this).slick({
             arrows: true,
             dots: false,
@@ -139,6 +140,11 @@ jQuery( document ).ready(function() {
             ]
           
           });
+          var slideCount1 = jQuery(".event-slider .item").length;
+          console.log("slideCount1slideCount1", slideCount1);
+            if (slideCount1 < 2){
+              jQuery(".btn-wrap .next-btn").addClass("nextDisabled")
+            }
           jQuery(this).on('afterChange', function(event, slick, currentSlide, nextSlide) {
             if(jQuery('button.slick-next').hasClass("slick-disabled")){
               jQuery(".btn-wrap .next-btn").addClass("nextDisabled")

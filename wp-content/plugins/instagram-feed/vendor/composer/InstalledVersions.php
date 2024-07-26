@@ -21,7 +21,6 @@ use InstagramFeed\Vendor\Composer\Semver\VersionParser;
  * To require its presence, you can require `composer-runtime-api ^2.0`
  *
  * @final
- * @internal
  */
 class InstalledVersions
 {
