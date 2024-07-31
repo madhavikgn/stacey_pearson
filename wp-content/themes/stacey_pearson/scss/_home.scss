@@ -293,6 +293,9 @@
                         letter-spacing: .8px;
                         text-align: left
                     }
+                    &:hover{
+                        position: unset;
+                    }
                 }
             }
         }

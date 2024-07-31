@@ -526,6 +526,9 @@ footer hr {
     text-align: left;
   }
 }
+.gallery-section ul li .gallery-name a:hover {
+  position: unset;
+}
 
 .about-us-section {
   padding: 115px 0 126px 0;
