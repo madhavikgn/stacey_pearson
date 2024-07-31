@@ -1489,6 +1489,7 @@ footer hr {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 0 auto;
 }
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider {
   padding: 0 14px;
@@ -1759,6 +1760,16 @@ footer hr {
   .error404 .error-main .content .backlink {
     font-size: 13px;
   }
+}
+
+body:not(.sync-slider .slick-arrow) #gallery-view-0.gallery-view .mainpopup .next-prev {
+  display: none;
+}
+body:not(.sync-slider .slick-arrow) #gallery-view-1.gallery-view .mainpopup .next-prev {
+  display: none;
+}
+body:not(.sync-slider .slick-arrow) #gallery-view-2.gallery-view .mainpopup .next-prev {
+  display: none;
 }
 
 html {

@@ -1222,6 +1222,7 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                margin: 0 auto;
                 .innerslider{
                     padding: 0 14px;
                     cursor: pointer;
@@ -1503,3 +1504,9 @@
 }
 
 
+
+body:not(.sync-slider .slick-arrow){
+    #gallery-view-0.gallery-view .mainpopup .next-prev{display: none;}
+    #gallery-view-1.gallery-view .mainpopup .next-prev{display: none;}
+    #gallery-view-2.gallery-view .mainpopup .next-prev{display: none;}
+}
