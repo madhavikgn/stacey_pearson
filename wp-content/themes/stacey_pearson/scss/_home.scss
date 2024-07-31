@@ -1385,6 +1385,7 @@
             backface-visibility: hidden;
             -webkit-font-smoothing: subpixel-antialiased;
             pointer-events: none;
+            display: none;
             @media only screen and (max-width:1600px){
                 right: 79px;
                 bottom: 212px;
@@ -1505,8 +1506,12 @@
 
 
 
-body:not(.sync-slider .slick-arrow){
-    #gallery-view-0.gallery-view .mainpopup .next-prev{display: none;}
-    #gallery-view-1.gallery-view .mainpopup .next-prev{display: none;}
-    #gallery-view-2.gallery-view .mainpopup .next-prev{display: none;}
+body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-0.gallery-view .mainpopup .next-prev{display: block;}
+}
+body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-1.gallery-view .mainpopup .next-prev{display: block;}
+}
+body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-2.gallery-view .mainpopup .next-prev{display: block;}
 }
